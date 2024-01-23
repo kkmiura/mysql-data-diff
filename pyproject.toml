@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mysql-data-diff"
+version = "0.1.0"
+description = ""
+authors = ["kkmiura <sf.kkmiura@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+data-diff = "^0.10.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.14"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+mysql-data-diff = 'mysql_data_diff.__main__:main'
